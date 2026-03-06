@@ -38,29 +38,37 @@
 
 ## 6. AI Review Engine
 
-- [ ] 6.1 Create image compression utility (lib/imageUtils.ts): resize to max 2048px longest side, compress to JPEG 85% quality for images over 2MB
-- [ ] 6.2 Create review engine utility (lib/reviewEngine.ts): construct system prompt with Radical Candor instructions, 6-parameter schema, and structured JSON enforcement
-- [ ] 6.3 Implement Gemini API call with base64 image payload, brand guidelines, format, and business goals
-- [ ] 6.4 Add response parsing, JSON schema validation, and retry logic (up to 2 retries on invalid responses)
-- [ ] 6.5 Add average score calculation and priority fixes extraction
-- [ ] 6.6 Create .env.example with VITE_GEMINI_API_KEY placeholder
+- [x] 6.1 Create image compression utility (lib/imageUtils.ts): resize to max 2048px longest side, compress to JPEG 85% quality for images over 2MB
+- [x] 6.2 Create review engine utility (lib/reviewEngine.ts): construct system prompt with Radical Candor instructions, 6-parameter schema, and structured JSON enforcement
+- [x] 6.3 Implement Gemini API call with base64 image payload, brand guidelines, format, and business goals
+- [x] 6.4 Add response parsing, JSON schema validation, and retry logic (up to 2 retries on invalid responses)
+- [x] 6.5 Add average score calculation and priority fixes extraction
+- [x] 6.6 Create .env.example with VITE_GEMINI_API_KEY placeholder
 
 ## 7. Analysis Dashboard
 
-- [ ] 7.1 Create AnalysisDashboard container component with overall layout (image reference + results)
-- [ ] 7.2 Create overall score display: large monospace number with color coding and "Overall Score" label
-- [ ] 7.3 Create PriorityFixes component: accent-bordered callout card showing top 2 fixes
-- [ ] 7.4 Create ReviewTable component: 6 rows with parameter name, score (color-coded monospace), and verdict
-- [ ] 7.5 Create ScoreCell component with color-coded score rendering (green/yellow/red thresholds)
-- [ ] 7.6 Create SolutionPanel: expandable row detail showing challenge, acknowledgment, and solution with smooth height animation
-- [ ] 7.7 Add stagger animation to table rows on dashboard mount
-- [ ] 7.8 Display uploaded image reference in a bordered card alongside review results
-- [ ] 7.9 Add "New Review" button that resets wizard state and returns to Step 1
+- [x] 7.1 Create AnalysisDashboard container component with overall layout (image reference + results)
+- [x] 7.2 Create overall score display: large monospace number with color coding and "Overall Score" label
+- [x] 7.3 Create PriorityFixes component: accent-bordered callout card showing top 2 fixes
+- [x] 7.4 Create ReviewTable component: 6 rows with parameter name, score (color-coded monospace), and verdict
+- [x] 7.5 Create ScoreCell component with color-coded score rendering (green/yellow/red thresholds)
+- [x] 7.6 Create SolutionPanel: expandable row detail showing challenge, acknowledgment, and solution with smooth height animation
+- [x] 7.7 Add stagger animation to table rows on dashboard mount
+- [x] 7.8 Display uploaded image reference in a bordered card alongside review results
+- [x] 7.9 Add "New Review" button that resets wizard state and returns to Step 1
 
 ## 8. Integration & Polish
 
-- [ ] 8.1 Wire App.tsx: conditional rendering between wizard view and dashboard view based on store state
-- [ ] 8.2 Add loading state view with animation and "Analyzing your Key Visual..." message
-- [ ] 8.3 Add error state handling with retry option for failed API calls
-- [ ] 8.4 Apply responsive layout: max-width 960px centered, stack on screens below 768px
-- [ ] 8.5 End-to-end manual test: full wizard flow through to dashboard with live Gemini API
+- [x] 8.1 Wire App.tsx: conditional rendering between wizard view and dashboard view based on store state
+- [x] 8.2 Add loading state view with animation and "Analyzing your Key Visual..." message
+- [x] 8.3 Add error state handling with retry option for failed API calls
+- [x] 8.4 Apply responsive layout: max-width 960px centered, stack on screens below 768px
+- [x] 8.5 End-to-end manual test: full wizard flow through to dashboard with live Gemini API
+
+## 9. Deployment
+
+- [x] 9.1 Initialize git repository and create initial commit
+- [x] 9.2 Create GitHub repository (hilaluaan-shit-it/radical-review)
+- [x] 9.3 Push to GitHub main branch
+- [x] 9.4 Deploy to Vercel production (radical-review.vercel.app)
+- [x] 9.5 Add VITE_GEMINI_API_KEY environment variable to Vercel

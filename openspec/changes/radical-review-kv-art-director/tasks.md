@@ -63,4 +63,12 @@
 - [x] 8.2 Add loading state view with animation and "Analyzing your Key Visual..." message
 - [x] 8.3 Add error state handling with retry option for failed API calls
 - [x] 8.4 Apply responsive layout: max-width 960px centered, stack on screens below 768px
-- [ ] 8.5 End-to-end manual test: full wizard flow through to dashboard with live Gemini API
+- [x] 8.5 End-to-end manual test: full wizard flow through to dashboard with live Gemini API
+
+## 9. Deployment
+
+- [x] 9.1 Initialize git repository and create initial commit
+- [x] 9.2 Create GitHub repository (hilaluaan-shit-it/radical-review)
+- [x] 9.3 Push to GitHub main branch
+- [x] 9.4 Deploy to Vercel production (radical-review.vercel.app)
+- [x] 9.5 Add VITE_GEMINI_API_KEY environment variable to Vercel
