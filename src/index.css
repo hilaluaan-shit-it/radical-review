@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* GitHub Dark Mode — Canvas */
+  --color-canvas-default: #0D1117;
+  --color-canvas-subtle: #161B22;
+  --color-canvas-inset: #010409;
+
+  /* GitHub Dark Mode — Borders */
+  --color-border-default: #30363D;
+  --color-border-muted: #21262D;
+
+  /* GitHub Dark Mode — Foreground */
+  --color-fg-default: #E6EDF3;
+  --color-fg-muted: #8B949E;
+
+  /* GitHub Dark Mode — Accents */
+  --color-accent-fg: #58A6FF;
+  --color-success-fg: #3FB950;
+  --color-attention-fg: #D29922;
+  --color-danger-fg: #F85149;
+  --color-done-fg: #A371F7;
+
+  /* Font families */
+  --font-body: system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-canvas-default);
+  color: var(--color-fg-default);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
